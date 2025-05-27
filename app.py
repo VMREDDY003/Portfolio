@@ -11,10 +11,10 @@ import markdown2
 # ------------------------------
 load_dotenv()  # Loads variables from .env into environment
 
-GITHUB_USERNAME = os.getenv("GITHUB_USERNAME")
-GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
-EMAIL = os.getenv("EMAIL")
-EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
+GITHUB_USERNAME = st.secrets["GITHUB_USERNAME"]
+GITHUB_TOKEN = st.secrets["GITHUB_TOKEN"]
+EMAIL = st.secrets["EMAIL"]
+EMAIL_PASSWORD = st.secrets["EMAIL_PASSWORD"]
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
 PROFILE_IMAGE = "123444116.jpg"  # Update path if needed
